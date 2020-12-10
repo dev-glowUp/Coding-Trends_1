@@ -1,18 +1,76 @@
+/*
+
+This code was made with 🤍 for dev.glowUp Youtube Channel
+    #CodingTrends Series   |   nº1 Moving Gradient & Outlined Text
+
+    ⚡️VIDEO: https://youtu.be/6BSsFwv2Qm8
+
+    ✨Youtube:   https://www.youtube.com/channel/UCo9OcY66VYb4BgFBwvEdCLw
+    ✨Github:    https://github.com/dev-glowUp
+    ✨Website:   https://dev-glowup.myportfolio.com/
+    ✨Medium:    https://medium.com/dev-glowup
+    ✨Pinterest: https://www.pinterest.pt/dev_glowup/
+
+    🌟 Follow & Subscribe for more.. Thank you! 🌟
+
+    Created by Beatriz Novais
+
+*/
+
+/* GRADIENT */
+
 body {
-    /* background: linear-gradient(-45deg, #ffc107, #dc3545, #007bff, #28a745); */
-    background: linear-gradient(-45deg, #fff019, #fa75ef, #007bff, #64ec45);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #00076f, #44008b, #9f45b0, #e54ed0, #ffe4f2);
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
 }
 
+/* KEYFRAMES */
+
 @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* TEXT */
+
+.normal {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+/* OUTLINED TEXT */
+
+.outlined {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: sans-serif;
+  font-size: 10em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  /* OUTLINE */
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
 }
